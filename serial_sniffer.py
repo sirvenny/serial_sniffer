@@ -10,3 +10,6 @@ except:
     sys.exit("CANNOT CONNECT")
 
 s = ser.read(100)
+
+data = bytes(s)
+newfile.write(data)
